@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		
+		<property name="hbm2ddl.auto">update</property>
+		
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/teachers</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">vasudev@1995</property>
+
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+
+		<mapping class="system.Classes" />
+		<mapping class="system.Student" />
+		<mapping class="system.Subjects" />
+		<mapping class="system.Teachers" />
+	</session-factory>
+</hibernate-configuration>
